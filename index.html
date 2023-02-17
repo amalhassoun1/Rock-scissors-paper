@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Rock Paper Scissors</h1>
+      <h2>Beat the computer!</h2>
+    </main>
+    <div class="selections">
+      <button id="rock" data-selection="rock">✊</button>
+      <button id="paper" data-selection="paper">✋</button>
+      <button id="scrissors" data-selection="scissors">✌</button>
+  </div>
+        <div class="played">
+            <div>
+                <span class="player-selection" player-selection>You played  </span>
+            </div>      
+            <div>
+                <span class="computer-selection" computer-selection>Computer played </span>
+            </div>    
+        </div>  
+      <div class="results">
+        <div>
+          You have
+          <span class="result-score" data-your-score>0</span>
+          points
+        </div>
+        <div data-final-column>
+          Computer has
+          <span class="result-score" data-computer-score>0</span>
+          points
+        </div>
+        <div data-final-column>
+          <span class="result-score" data-final-score> </span>
+        </div>
+        <button class="reload">Restart</button>
+  </body>
+</html>

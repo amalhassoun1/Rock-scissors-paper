@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #0047ab;
+    color: #fff;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 120px;
+  }
+  .selections {
+    display: flex;
+    gap: 100px;
+    height: 250px;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .selections button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 150px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .selections button:hover {
+    opacity: 1;
+  }
+  .results {
+    margin-top: 30px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .played {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .result-score {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .result-selection {
+    opacity: 0.5;
+  }
+  
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 20px;
+  }
+  .reload {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .reload:hover,
+  .reload:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .selections button {
+      font-size: 50px;
+      gap: 0px;
+    }
+    .results {
+      margin-top: 0px;
+      font-size: small;
+      gap: 20px;
+    }
+  }
+  
